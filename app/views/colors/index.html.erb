@@ -1,0 +1,10 @@
+<h1>Colors</h1>
+
+<% @colors.each do |color| %>
+  <div style="background-color: <%= color.code %>">
+    <p><%= color.name %></p>
+    <%= link_to "Delete", color_path(color), method: :delete, data: { confirm: "Are you sure?" } %>
+  </div>
+<% end %>
+
+<%= link_to "Add Color", new_color_path %>

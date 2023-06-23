@@ -3,5 +3,8 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-  get "/colors" => "colors#index"
+  # get "/colors" => "colors#index"
+  # post "/colors" => "colors#create"
+  # get "/colors/:id" => "colors#show"
+  resources :colors
 end
